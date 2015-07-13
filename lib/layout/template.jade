@@ -1,0 +1,19 @@
+section(class="Layout")
+	section(class="Layout-antagonist")
+		each card in [1,2,3,4,5]
+			include ../card/template.jade
+	section(class="Layout-main")
+		div(class="Layout-status")
+			each name in ["Jeduan", "Leonidas"]
+				include ../status/template.jade
+
+		div(class="Layout-battle")
+			include ../battle/template.jade
+
+		div(class="Layout-phases")
+			- text = "Ese ataque fue muy fuerte. Le quitatse 300 puntos"
+			include ../phases/template.jade
+
+	section(class="Layout-player")
+		each card in [1,2,3,4,5]
+			include ../card/template.jade
